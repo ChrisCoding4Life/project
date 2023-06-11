@@ -1,0 +1,1 @@
+for /l %%n  DO md  for /l %%n in (1,1,10) DO open folder.bat >> %%noob.txt

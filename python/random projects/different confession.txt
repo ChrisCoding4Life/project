@@ -1,0 +1,50 @@
+# module/import
+import turtle
+
+# string/draw function
+pen=turtle.Turtle()
+
+# curve functon
+def curve():
+
+      # do over and over till done 200 times
+      for i in range(200):
+          #moves right
+          pen.right(1)
+          # moves forward
+          pen.forward(1)
+
+# heart function
+def heart():
+    # fill color
+    pen.fillcolor('light_pink')
+    # makes what evers below it happen
+    pen.beginfill()
+    # moves right
+    pen.left(140)
+    # moves forward
+    pen.fcrward(113)
+    # calls the curve function
+    curve()
+    # moves left
+    pen.left(120)
+    #moves forward
+    pen.forward(112)
+    # ends pen.beginfill()
+    pen.end_fill()
+    # executes text function
+    _text()
+
+def _text():
+    pen.up()
+    # changes pos
+    pen.setpos(-68, 95)
+    pen.down()
+    # text color
+    pen.color('light_blue')
+    # puts text on screen
+    pen.write("I Love You")
+
+# executes heart function and text function
+heart()
+pen.ht()
